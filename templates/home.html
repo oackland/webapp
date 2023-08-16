@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% set page_title = 'Home' %}
+
+{% block content  %}
+
+	<div class="container d-flex justify-content-center align-items-center"
+	     style="background-image: radial-gradient(#9C1A1C, darkgoldenrod); min-height: calc(100vh - 150px); padding: 20px; padding-bottom: 150px;">
+	<div class="text-center">
+		<h1>Guess that Pokemon!</h1>
+		<p>If you win, you get a custom card!</p>
+		<form>
+			<div class="row">
+				<div class="col-lg-6">
+					<label for="n1">Number 1</label>
+					<label>
+						<input name="n1" type="text" class="form-control"/>
+					</label>
+				</div>
+				<div class="col-lg-6">
+					<label for="n2">Number 2</label>
+					<label>
+						<input name="n2" type="text" class="form-control"/>
+					</label>
+				</div>
+			</div>
+			<div class="text-center mt-3">
+				<button type="button" class="btn btn-success red" id="calculate">Get a pokemon!</button>
+			</div>
+		</form>
+		<h1 class="text-center mt-4" id="result" style="font-size:70px">?</h1>
+	</div>
+
+{% endblock %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">

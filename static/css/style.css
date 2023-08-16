@@ -1,0 +1,267 @@
+*
+{
+	box-sizing : inherit;
+	margin     : 0;
+	padding    : 0;
+	}
+
+body
+{
+	font-family : SansSerif, serif;
+	font-size   : 85.8%;
+	background  : white;
+	color       : black;
+	text-shadow : 1px 2px 2px rgba(0, 0, 0, 20%);
+	}
+
+html
+{
+	font-family : "Roboto Light", sans-serif;
+	font-size   : 65.8%;
+	}
+
+.main__bg
+{
+	height              : 8vh;
+	text-align          : center;
+	background-color: #485f6e;
+	background-position : top;
+	backface-visibility : hidden;
+	}
+
+.nav_bar
+{
+	display        : flex;
+	align-content  : center;
+	flex-direction : row;
+	}
+
+/*brand name from top left side*/
+/*.logo_link*/
+/*{*/
+/*	font-weight         : 700;*/
+/*	position            : absolute;*/
+/*	display             : flex;*/
+/*	height              : auto;*/
+/*	margin-top          : 5%;*/
+/*	margin-left         : 3%;*/
+/*	text-align          : left;*/
+/*	text-decoration     : none;*/
+/*	color               : white;*/
+/*	border              : none;*/
+/*	backface-visibility : hidden;*/
+/*	}*/
+.logo_link
+{
+	font-weight         : 700;
+	position            : absolute;
+	display             : flex;
+	font-size: 2.1rem;
+	justify-content     : center; /* Horizontally center align the content */
+	align-items         : center; /* Vertically center align the content */
+	height              : auto;
+	top                 : 4%; /* Move the top position to the center */
+	left                : 3%;
+	transform           : translate(0, -50%); /* Adjust the vertical centering */
+	text-align          : left;
+	text-decoration     : none;
+	color               : white;
+	border              : none;
+	backface-visibility : hidden;
+	}
+
+/* top menu */
+.nav__links
+{
+	position        : relative;
+	left            : 30%;
+	display         : flex;
+	align-content   : center;
+	justify-content : center;
+	align-items     : center;
+	width           : 50rem;
+	text-align      : center;
+	text-decoration : none;
+	/*transform: translateY(50%);*/
+	}
+
+.a__menu,
+li
+{
+	font-size       : 1.6rem;
+	position        : relative; /* Change 'absolute' to 'relative' */
+	display         : flex; /* Change 'inline-flex' to 'flex' */
+	align-items     : center; /* Vertically center align the content */
+	justify-content : center; /* Horizontally center align the content */
+	width           : 100%;
+	margin-top      : 5%; /* Remove the margin-top */
+	list-style-type : none;
+	text-decoration : none;
+	color           : white;
+	}
+/*links from the nav bar*/
+/*.a__menu, li*/
+/*{*/
+/*	font-size       : 2.1rem;*/
+/*	position        : absolute;*/
+/*	display         : inline-flex;*/
+/*	align-content   : center;*/
+/*	flex-direction  : row;*/
+/*	justify-content : center;*/
+/*	width           : 100%;*/
+/*	margin-top      : 50%;*/
+/*	list-style-type : none;*/
+/*	text-decoration : none;*/
+/*	color           : white;*/
+/*	}*/
+
+.img
+{
+	width  : 100%;
+	height : 100%;
+	}
+
+i
+{
+	font-weight : 500;
+	}
+
+.text__article
+{
+	text-align   : left;
+	padding-left : 5%;
+	}
+
+/*button*/
+.button__article
+{
+	width           : 15%;
+	margin-top      : auto;
+	margin-bottom   : auto;
+	margin-left     : auto;
+	justify-content : center;
+	}
+
+button
+{
+	font-family      : "Roboto Light", serif;
+	font-size        : 2.0rem;
+	padding          : 1rem;
+	color            : white;
+	border           : rgba(0, 0, 0, 0.3) .1rem solid;
+	background-color : rgb(226, 183, 49);
+	}
+
+.footer
+{
+	display          : flex;
+	background-color : #485f6e;
+	color            : white;
+	position         : relative; /* Change to fixed */
+	bottom           : 0; /* Stick the footer to the bottom */
+	width            : 100%;
+	transform: translatey(75rem);
+	height           : 20vh;
+	flex-direction   : row;
+	}
+
+
+.left-side
+{
+	display         : flex;
+	justify-content : center;
+	width           : 40%;
+	margin-top      : auto;
+	margin-bottom   : auto;
+	}
+
+.footer_image
+{
+	width : 70%;
+	}
+
+.right-side
+{
+	
+	display         : inline-flex;
+	justify-content : left;
+	text-align      : left;
+	width           : 100%;
+	}
+
+.column
+{
+	
+	width : 100%;
+	}
+
+.list
+{
+	width : 100%;
+	}
+
+.list a
+{
+	color           : white;
+	width           : 100%;
+	font-size       : 1.8rem;
+	text-decoration : none;
+	text-transform  : none;
+	}
+
+.info
+{
+	display         : flex;
+	justify-content : left;
+	margin-top      : 20%;
+	font-size       : 4.6rem;
+	}
+
+
+ul
+{
+	list-style : none;
+	padding    : 0;
+	margin     : 0;
+	}
+
+.icon-link
+{
+	display : inline-block;
+	height  : 100%;
+	}
+
+.icon
+{
+	vertical-align : middle;
+	margin-right   : 10px;
+	}
+
+.text
+{
+	vertical-align : middle;
+	}
+
+@media only screen and (max-width : 900px)
+{
+	.nav__links
+	{
+		position        : absolute;
+		display         : inline-list-item; /* Add the display property (e.g., flex, inline-flex, grid, etc.) */
+		align-content   : center;
+		justify-content : center;
+		align-items     : center;
+		text-align      : center;
+		text-decoration : none;
+		/* transform: translateY(50%); */ /* This line is commented out to avoid unintended effects */
+		}
+	}
+
+@media only screen and (max-width : 600px)
+{
+	html
+	{
+		font-family : "Roboto Light", sans-serif;
+		font-size   : 25.8%;
+		}
+	}

@@ -1,0 +1,46 @@
+/* Styles for the content in the home template */
+
+body
+{
+	background-color : red; /* Set the background color to red */
+	}
+
+.container
+{
+	min-height     : calc(100% - 150px);
+	padding        : 20px;
+	padding-bottom : 150px; /* Add padding to account for the footer's height */
+	}
+
+.center
+{
+	text-align : center;
+	}
+
+.form-control
+{
+	width      : 100%;
+	padding    : 10px;
+	margin     : 5px 0;
+	box-sizing : border-box;
+	}
+
+#calculate
+{
+	margin-top : 10px;
+	}
+
+#result
+{
+	font-size  : 70px;
+	margin-top : 20px;
+	}
+
+/* Additional styles for responsiveness */
+@media (max-width : 767px)
+{
+	.col-lg-6
+	{
+		width : 100%;
+		}
+	}
