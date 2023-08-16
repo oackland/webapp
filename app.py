@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 
@@ -22,8 +24,8 @@ def home():
 
 
 if __name__ == '__main__':
-	create_tables()  # Create database tables within the application context
-	app.run(debug=True)
+	port = int(os.environ.get('PORT', 5000))  # Get the port from the environment variable or use 5000
+	app.run(host='0.0.0.0', port=port)  # Listen on the correct port
 
 
 def route(param):
